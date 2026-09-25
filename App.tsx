@@ -19,24 +19,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <StatusBar style="auto" />
-
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Inicio"
-          component={Inicio}
-        />
-
-        <Stack.Screen
-          name="Detalhes"
-          component={Detalhes}
-        />
-
-        <Stack.Screen
-          name="Listagem"
-          component={Listagem}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    </View>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
